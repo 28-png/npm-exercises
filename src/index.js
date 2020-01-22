@@ -8,10 +8,8 @@ $('h1').append(
     '<li>bears</li>' +
     '<li>tigers</li>' +
     '<li>fish</li>' +
-
-
-'</ul>'
-)
+    '</ul>'
+);
 
 
 
