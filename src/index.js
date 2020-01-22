@@ -1,6 +1,13 @@
 const $ = require('jquery');
+let randomColor = require('randomcolor');
+let color = randomColor;
+setInterval(change = () => {
 
-$('body').html('<h1>Hello!</h1>');
+$('body').css('background-color', color)
+
+}, 5000);
+$('div').html('<h1>Hello from Webpack!</h1>');
+
 $('h1').append(
     '<ul>' +
     '<li>snakes</li>' +
@@ -10,8 +17,6 @@ $('h1').append(
     '<li>fish</li>' +
     '</ul>'
 );
-
-
 
 const sayHello = () => {
     return "hello!"
