@@ -1,3 +1,5 @@
+import {sayAll} from "./say-hello";
+
 const $ = require('jquery');
 let randomColor = require('randomcolor');
 let color = randomColor;
@@ -5,6 +7,8 @@ let color = randomColor;
 //
 // $('body').css('background-color', color)
 // }, 5000);
+
+
 
 $('div').html('<h1>Hello from Webpack!</h1>');
 
@@ -18,7 +22,7 @@ $('h1').append(
     '</ul>'
 );
 
-const sayHello = () => {
-    console.log("hello!")
-};
-sayHello();
+// const sayHello = () => {
+//     console.log("hello!")
+// };
+// sayHello();
