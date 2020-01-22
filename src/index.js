@@ -19,7 +19,6 @@ $('h1').append(
 );
 
 const sayHello = () => {
-    return "hello!"
+    console.log("hello!")
 };
-
-console.log(sayHello);
+sayHello();
