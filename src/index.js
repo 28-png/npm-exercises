@@ -2,15 +2,13 @@ import {renderOnPage, sayAll, multiply} from "./say-hello";
 export const $ = require('jquery');
 let randomColor = require('randomcolor');
 let color = randomColor;
-// setInterval(change = () => {
-//
-// $('body').css('background-color', color)
-// }, 5000);
+let change;
+setInterval(  change = () => $('body').css('background-color', color), 5000);
 
 sayAll();
 renderOnPage();
 console.log(multiply(5));
-$('div').html('<h1>Hello from Webpack!</h1>');
+$('#header1').html('<h1>Hello from Webpack!</h1>');
 
 $('h1').append(
     '<ul>' +
